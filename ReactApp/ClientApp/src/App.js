@@ -5,6 +5,9 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import axios from 'axios';
+import { UncontrolledComponent } from './components/Form';
+import { ControlledForm } from './components/ControlledForm';
+import JSONSchemaForm from './components/json-schema-form';
 
 export default class App extends Component {
   displayName = App.name
@@ -34,7 +37,16 @@ export default class App extends Component {
                     <Route exact path='/' component={Home} />
                     <Route path='/counter' component={Counter} />
                     <Route path='/fetchdata' component={FetchData} />
+                    <p>Uncontrolled form:</p>
+                    <UncontrolledComponent />
+                    <p>JSON Schema form:</p>
+                    <JSONSchemaForm />
+                    <br />
+                    <p>Controlled form:</p>
+                    <ControlledForm />
                 </Layout>
+                <br />
+                <br/>
             </div>
         );
     };
