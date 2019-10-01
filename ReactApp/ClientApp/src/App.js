@@ -10,6 +10,7 @@ import { ControlledForm } from './components/ControlledForm';
 import { JSONSchemaForm } from './components/json-schema-form';
 import { EventButton } from './components/EventButton';
 import { Reset } from './components/Reset';
+import { Names } from './components/Names';
 
 export default class App extends Component {
   displayName = App.name
@@ -48,6 +49,7 @@ export default class App extends Component {
                     <ControlledForm />
                     <EventButton />
                     <Reset />
+                    <Names />
                 </Layout>
                 <br />
                 <br/>
