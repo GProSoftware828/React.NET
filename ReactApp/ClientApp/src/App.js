@@ -7,7 +7,9 @@ import { Counter } from './components/Counter';
 import axios from 'axios';
 import { UncontrolledComponent } from './components/Form';
 import { ControlledForm } from './components/ControlledForm';
-import JSONSchemaForm from './components/json-schema-form';
+import { JSONSchemaForm } from './components/json-schema-form';
+import { EventButton } from './components/EventButton';
+import { Reset } from './components/Reset';
 
 export default class App extends Component {
   displayName = App.name
@@ -44,6 +46,8 @@ export default class App extends Component {
                     <br />
                     <p>Controlled form:</p>
                     <ControlledForm />
+                    <EventButton />
+                    <Reset />
                 </Layout>
                 <br />
                 <br/>
