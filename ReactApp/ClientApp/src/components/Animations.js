@@ -1,17 +1,15 @@
 ﻿import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import '../index.css'
+import '../index.css';
+import { Motion, spring } from 'react-motion';
 
 export class Animations extends React.Component {
     render() {
         return (
-            <ReactCSSTransitionGroup
-                transitionName="fade"
-                transitionAppear
-                transitionAppearTimeout={2000}
-            >
-                <h1>React.NET example:</h1>
-            </ReactCSSTransitionGroup>
+            <Motion defaultStyle={{ opacity: 0.01 }} style={{opacity: spring(1)}}>
+                {interpolatingStyle => (
+                    <h1 style={interpolatingStyle}>React.NET example:</h1>
+                )}
+            </Motion>
             )
     }
 }
