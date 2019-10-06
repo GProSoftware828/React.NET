@@ -6,7 +6,7 @@
 
 To run it locally:
 
-1. On a Windows PC, download the release to your desktop.
+1. On a Windows PC, download the [release](https://github.com/GProSoftware828/React.NET/releases) to your desktop.
 2. Rt click on the downloaded folder and chose 'Extract All'.
 3. Open the extraced folder, click on the solution file to open it, ReactApp.sln
 (it should open with Visual Studio automatically, if you need to take fifteen minutes to install
